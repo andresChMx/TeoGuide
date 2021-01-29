@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "194738629461",
+    "firebase_url": "https://teoguide-4314a.firebaseio.com",
+    "project_id": "teoguide-4314a",
+    "storage_bucket": "teoguide-4314a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194738629461:android:533abe490860bbebc6dddc",
+        "android_client_info": {
+          "package_name": "com.example.teoguideas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194738629461-tn4ib77aag6ano02hjtrml4br9kucu94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM_YCyHJ8xOYDHIKwGtCPRLaN1zvBtcis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194738629461-tn4ib77aag6ano02hjtrml4br9kucu94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

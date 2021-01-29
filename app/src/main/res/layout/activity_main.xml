@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:src="@drawable/ic_search_white_24dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <ss.com.bannerslider.Slider
+            android:id="@+id/banner_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ss.com.bannerslider.Slider>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <Button
+                android:id="@+id/btn_camara"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_Camara" />
+
+            <Button
+                android:id="@+id/btnProbando"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_toEndOf="@+id/btn_camara"
+                android:text="@string/btn_Probando" />
+
+            <Button
+                android:id="@+id/btnSubir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_toEndOf="@+id/btnProbando"
+                android:text="@string/btn_subir" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_comic"
+                android:text="NEW COMIC (10)"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/horizontal_line"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="3dp"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_comic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
